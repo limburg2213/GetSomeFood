@@ -1,0 +1,31 @@
+{
+  "name": "Admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dirname": "^0.1.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-passport-logout": "^0.1.0",
+    "express-session": "^1.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.1.2",
+    "mongoose": "^6.0.7",
+    "nodemon": "^2.0.13",
+    "passport": "^0.5.0",
+    "passport-http": "^0.3.0",
+    "path": "^0.12.7"
+  }
+}

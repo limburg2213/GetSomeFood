@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./js/app.js"></script>
+  <nav style="display: flex; background-color: #205081;">
+    <div class="container  align-items-center">
+    <div style="float: left;height: 50px; display: flex;align-items: center;"><h3 style="font-size: 18px; margin: 0;float: left;"><a href="dashboard.html" style="color: white;text-decoration: none;">Administration <span><small>home</small></span></a></h3>
+      
+    </div>
+    <div class="hamburger align-items-center"><button id="barsmenu"  class="hamburger btn btn-dark"><i class="fas fa-bars"></i></button><hr class="bg-secondary"></div>
+    
+    <div class="">
+    <ul id="topbar" class="nav align-items-center">
+        <li class="topmenu"><a href="User.html" style="color: white;"><i class="fas fa-user-lock"></i>Users/Accounts</a></li>
+               <li class="topmenu nav-item"><a href="activities.html" style="color: white;"><i class="fas fa-poll"></i>Activities</a></li>
+               <li class="topmenu nav-item"><a href="messages.html" style="color: white;"><i class="fas fa-comment-alt"></i>Messages</a></li>
+               <li class="topmenu nav-item"><a href="broadcasts.html" style="color: white;"><i class="fas fa-bullhorn"></i>Broadcast</a></li>
+               <li class="topmenu nav-item"><a href="settings.html" style="color: white;"><i class="fas fa-bullhorn"></i>Settings</a></li>
+               <li class="topmenu nav-item"><a href="" style="color: white;"><i class="fas fa-sign-out-alt"></i>LOGOUT</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+    <div class="container">
+        <div style="margin: 50px 0px;">
+        <i class="fas fa-user-lock"></i>
+        <span>Accounts for <span>Username</span></span>
+        <a href="newAccounts.html" style="float: right;text-decoration: none;" class="btn-xs btn-primary btn-sm"><i class="fas fa-user-plus"></i>Add Account</a>
+        <hr class="bg-secondary">
+        </div>
+       <div class="row p-3">
+          
+        <div class="table-responsive mt-2 px-3" data-url="/api/user/seed">
+                <table class="table">
+                    <thead >
+                      <tr>
+                        <th style="border-bottom: 1px solid #ddd !important;" scope="col">ACCOUNT DETAILS</th>
+                        <th style="border-bottom: 1px solid #ddd !important;" scope="col">ACCOUNT BALANCE</th>
+                        <th style="border-bottom: 1px solid #ddd !important;" scope="col">STATUS</th>
+                        <th style="border-bottom: 1px solid #ddd !important;" scope="col">ACCOUNT TYPE</th>
+                        <th style="border-bottom: 1px solid #ddd !important;" scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td id="tdata">Larry</td>
+                        <td id="tdata">Larry</td>
+                        <td id="tdata"><span class="badge alert-success">Active</span></td>
+                        <td id="tdata">Larry</td>
+                        <td id="tdata">
+                          <div class="d-flex justify-content-end">
+                          <span style="white-space: nowrap;"><a href="" style="white-space: nowrap;" class="tblbtn btn-sm"><small><i class="fas fa-file-invoice-dollar pe-2"></i> View Transaction</small> </a></span>
+                          <span style="white-space: nowrap;"><a href="" style="white-space: nowrap;" class="tblbtn btn-sm"><small><i class="fas fa-edit pe-2"></i> Edit Account</small> </a></span>
+                          <span style="white-space: nowrap;"><a href="" style="white-space: nowrap;" class="tblbtn btn-sm"><small><i class="fas fa-trash pe-2"></i> Delete Account</small> </a></span>
+                        </div>
+                      </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <hr class="bg-secondary">
+               </div>
+       </div>
+    </div>
+    <script src="js/jquery-3.2.1.slim.min.js" ></script>
+    <script src="js/popper.min.js" ></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
