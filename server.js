@@ -9,6 +9,7 @@ import { fileURLToPath } from "url";
 import session from "express-session";
 import jwt from "jsonwebtoken";
 import cookieParser from "cookie-parser";
+import cors from "cors";
 import transactionRoute from "./routes/transactionRoute.js";
 
 
@@ -20,6 +21,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+app.use(cors());
 
 mongoose.connect(
     process.env.DB_CONNECTION,
